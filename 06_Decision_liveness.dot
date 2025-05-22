@@ -1,0 +1,30 @@
+digraph DiskGraph {
+node [shape=box,style=rounded]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+"-8000180999651354617.0" [style = filled] [label="/\\ msgs = {}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 0]\n/\\ chosen = [Tom |-> \"Keine Pizza\"]
+#-8000180999651354617.0#"]
+"-8000180999651354617.0" -> "-8000180999651354617.0" [label="[ftt]"];
+"-8000180999651354617.0" [label="/\\ msgs = {}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 0]\n/\\ chosen = [Tom |-> \"Keine Pizza\"]
+#-8000180999651354617.0#"];
+"-8000180999651354617.0" -> "4815233692546602143.0" [label="[ttt]"];
+"4815233692546602143.0" [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 0]\n/\\ chosen = [Tom |-> \"Keine Pizza\"]
+#4815233692546602143.0#"];
+"4815233692546602143.0" -> "-8619480272861857706.0" [label="[ttt]"];
+"-8619480272861857706.0" [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Hawaii\"]
+#-8619480272861857706.0#"];
+"4815233692546602143.0" -> "-8324341306389403827.0" [label="[ttt]"];
+"-8324341306389403827.0" [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Salami\"]
+#-8324341306389403827.0#"];
+"4815233692546602143.0" -> "4815233692546602143.0" [label="[ttf]"];
+"4815233692546602143.0" [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 0]\n/\\ chosen = [Tom |-> \"Keine Pizza\"]
+#4815233692546602143.0#"];
+"-8324341306389403827.0" -> "-8324341306389403827.0" [label="[tff]"];
+"-8324341306389403827.0" [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Salami\"]
+#-8324341306389403827.0#"];
+"-8619480272861857706.0" -> "-8619480272861857706.0" [label="[tff]"];
+"-8619480272861857706.0" [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Hawaii\"]
+#-8619480272861857706.0#"];
+}
+}

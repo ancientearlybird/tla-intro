@@ -1,0 +1,673 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.5 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.5" pages="11">
+  <diagram id="pZKBZC2b_CgFxede3XZt" name="TLA+">
+    <mxGraphModel dx="1896" dy="983" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fEKC-Q5R27Qi3I3unFy3-1" value="Was ist TLA+?" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=40;" parent="1" vertex="1">
+          <mxGeometry y="45" width="1167" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="fEKC-Q5R27Qi3I3unFy3-2" value="&lt;ul&gt;&lt;li&gt;Beschreibt&amp;nbsp;&lt;b&gt;abstrakt und präzise, &lt;u&gt;was&amp;nbsp;&lt;/u&gt;&lt;/b&gt;ein System tut (Logik, Design) mit Hilfe &lt;b&gt;mathematischer&lt;/b&gt; Methoden.&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Ist unabhängig davon, von&amp;nbsp;&lt;b&gt;&lt;u&gt;wie&amp;nbsp;&lt;/u&gt;&lt;/b&gt;ein System etwas tut (Implementierung).&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Wurde ursprünglich entwickelt für gleichzeitige und verteilte Systeme.&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;Ist in der Lage, Logik- bzw. Designfehler (Was-Ebene) zu finden, die durch veschiedene Arten von Tests (Wie-Ebene/Implementierung) gar nicht oder nur mit sehr hohem Aufwand auffindbar sind.&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&quot;Unit-Test und Debugger für Logik&quot;&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=30;" parent="1" vertex="1">
+          <mxGeometry x="81" y="223" width="1011" height="532" as="geometry" />
+        </mxCell>
+        <mxCell id="9l-vaQmgDzPgc-e54UyI-1" value="Temporal Logic of Actions" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="7" y="125" width="1158" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Math" id="-Kv-WydbIOzDdz4pd0Vh">
+    <mxGraphModel dx="1896" dy="983" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="Q8x_BsgLaWqH_rQuEiCD-0" />
+        <mxCell id="Q8x_BsgLaWqH_rQuEiCD-1" parent="Q8x_BsgLaWqH_rQuEiCD-0" />
+        <mxCell id="Q8x_BsgLaWqH_rQuEiCD-2" value="&lt;h2 style=&quot;text-align: left;&quot; data-start=&quot;390&quot; data-end=&quot;441&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;Die zentralen mathematischen Methoden in TLA+&lt;/font&gt;&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=40;" parent="Q8x_BsgLaWqH_rQuEiCD-1" vertex="1">
+          <mxGeometry x="118" y="70" width="922" height="51" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;h2 data-start=&quot;390&quot; data-end=&quot;441&quot; class=&quot;&quot;&gt;&lt;font&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;1. &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-start=&quot;450&quot; data-end=&quot;473&quot;&gt;Mengentheorie (ZFC)&lt;/strong&gt;&lt;/font&gt;&lt;/h2&gt;&lt;ul data-start=&quot;474&quot; data-end=&quot;719&quot;&gt;&lt;li data-start=&quot;474&quot; data-end=&quot;576&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;476&quot; data-end=&quot;576&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TLA+ verwendet die klassische &lt;strong data-start=&quot;506&quot; data-end=&quot;561&quot;&gt;Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)&lt;/strong&gt; als Grundlage.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;577&quot; data-end=&quot;666&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;579&quot; data-end=&quot;666&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Alle Datenstrukturen wie Mengen, Sequenzen, Funktionen, Tupel etc. basieren auf Mengen.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;667&quot; data-end=&quot;719&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;669&quot; data-end=&quot;678&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Beispiel:&lt;/font&gt;&lt;/p&gt;&lt;pre class=&quot;overflow-visible!&quot; data-start=&quot;681&quot; data-end=&quot;719&quot;&gt;&lt;div class=&quot;contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary&quot;&gt;&lt;div class=&quot;overflow-y-auto p-4&quot; dir=&quot;ltr&quot;&gt;&lt;code class=&quot;whitespace-pre! language-tla&quot;&gt;&lt;span&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;S == {x ∈ Nat : x &amp;lt; 10}&lt;/font&gt;&lt;/span&gt;&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr data-start=&quot;721&quot; data-end=&quot;724&quot; class=&quot;&quot;&gt;&lt;h3 data-start=&quot;726&quot; data-end=&quot;784&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2. &lt;strong data-start=&quot;733&quot; data-end=&quot;784&quot;&gt;Prädikatenlogik (Prädikatenkalkül erster Stufe)&lt;/strong&gt;&lt;/font&gt;&lt;/h3&gt;&lt;ul data-start=&quot;785&quot; data-end=&quot;959&quot;&gt;&lt;li data-start=&quot;785&quot; data-end=&quot;872&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;787&quot; data-end=&quot;872&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Aussagenlogik mit Quantoren (&lt;code data-start=&quot;816&quot; data-end=&quot;819&quot;&gt;∀&lt;/code&gt;, &lt;code data-start=&quot;821&quot; data-end=&quot;824&quot;&gt;∃&lt;/code&gt;) und logischen Operatoren (&lt;code data-start=&quot;852&quot; data-end=&quot;855&quot;&gt;⇒&lt;/code&gt;, &lt;code data-start=&quot;857&quot; data-end=&quot;860&quot;&gt;∧&lt;/code&gt;, &lt;code data-start=&quot;862&quot; data-end=&quot;865&quot;&gt;∨&lt;/code&gt;, &lt;code data-start=&quot;867&quot; data-end=&quot;870&quot;&gt;¬&lt;/code&gt;).&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;873&quot; data-end=&quot;959&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;875&quot; data-end=&quot;959&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Wird verwendet, um Bedingungen, Invarianten, Vor-/Nachbedingungen usw. auszudrücken.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr data-start=&quot;961&quot; data-end=&quot;964&quot; class=&quot;&quot;&gt;&lt;h3 data-start=&quot;966&quot; data-end=&quot;1022&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;3. &lt;strong data-start=&quot;973&quot; data-end=&quot;1022&quot;&gt;Temporale Logik (Linear Temporal Logic – LTL)&lt;/strong&gt;&lt;/font&gt;&lt;/h3&gt;&lt;ul data-start=&quot;1023&quot; data-end=&quot;1223&quot;&gt;&lt;li data-start=&quot;1023&quot; data-end=&quot;1097&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1025&quot; data-end=&quot;1097&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Erweiterung von Logik zur Beschreibung von &lt;strong data-start=&quot;1068&quot; data-end=&quot;1096&quot;&gt;zeitabhängigem Verhalten&lt;/strong&gt;.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1098&quot; data-end=&quot;1223&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1100&quot; data-end=&quot;1124&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Ermöglicht Aussagen wie:&lt;/font&gt;&lt;/p&gt;&lt;ul data-start=&quot;1127&quot; data-end=&quot;1223&quot;&gt;&lt;li data-start=&quot;1127&quot; data-end=&quot;1146&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1129&quot; data-end=&quot;1146&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;code data-start=&quot;1129&quot; data-end=&quot;1134&quot;&gt;□ P&lt;/code&gt; (&quot;immer P&quot;)&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1149&quot; data-end=&quot;1173&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1151&quot; data-end=&quot;1173&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;code data-start=&quot;1151&quot; data-end=&quot;1156&quot;&gt;◇ P&lt;/code&gt; (&quot;irgendwann P&quot;)&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1176&quot; data-end=&quot;1223&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1178&quot; data-end=&quot;1223&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;code data-start=&quot;1178&quot; data-end=&quot;1187&quot;&gt;P ⇒ ◇ Q&lt;/code&gt; (&quot;wenn P, dann folgt irgendwann Q&quot;)&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p data-start=&quot;1225&quot; data-end=&quot;1330&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Diese ist entscheidend für die &lt;strong data-start=&quot;1256&quot; data-end=&quot;1317&quot;&gt;spezifikationsorientierte Beschreibung von Zustandsfolgen&lt;/strong&gt; in Systemen.&lt;/font&gt;&lt;/p&gt;&lt;hr data-start=&quot;1332&quot; data-end=&quot;1335&quot; class=&quot;&quot;&gt;&lt;h3 data-start=&quot;1337&quot; data-end=&quot;1384&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;4. &lt;strong data-start=&quot;1344&quot; data-end=&quot;1384&quot;&gt;Modellierung durch Zustandsübergänge&lt;/strong&gt;&lt;/font&gt;&lt;/h3&gt;&lt;ul data-start=&quot;1385&quot; data-end=&quot;1539&quot;&gt;&lt;li data-start=&quot;1385&quot; data-end=&quot;1440&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1387&quot; data-end=&quot;1440&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Zustände werden durch &lt;strong data-start=&quot;1409&quot; data-end=&quot;1427&quot;&gt;Variablenwerte&lt;/strong&gt; beschrieben.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1441&quot; data-end=&quot;1539&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1443&quot; data-end=&quot;1539&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Übergänge sind &lt;strong data-start=&quot;1458&quot; data-end=&quot;1470&quot;&gt;Aktionen&lt;/strong&gt;: logische Ausdrücke über aktuelle (&lt;code data-start=&quot;1506&quot; data-end=&quot;1509&quot;&gt;x&lt;/code&gt;) und nächste (&lt;code data-start=&quot;1524&quot; data-end=&quot;1528&quot;&gt;x&#39;&lt;/code&gt;) Zustände.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1441&quot; data-end=&quot;1539&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1443&quot; data-end=&quot;1539&quot; class=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Beispiel:&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;pre class=&quot;overflow-visible!&quot; data-start=&quot;1551&quot; data-end=&quot;1604&quot;&gt;&lt;div class=&quot;contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary&quot;&gt;&lt;div class=&quot;overflow-y-auto p-4&quot; dir=&quot;ltr&quot;&gt;&lt;code class=&quot;whitespace-pre! language-tla&quot;&gt;&lt;span&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Next == ∨ x&#39; = x + 1&lt;br&gt;         &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;∨ x&#39; = x - 1&lt;/font&gt;&lt;/span&gt;&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;hr data-start=&quot;1606&quot; data-end=&quot;1609&quot; class=&quot;&quot;&gt;&lt;h3 data-start=&quot;1611&quot; data-end=&quot;1660&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;5. &lt;strong data-start=&quot;1618&quot; data-end=&quot;1660&quot;&gt;Nichtdeterminismus und CHOOSE-Operator&lt;/strong&gt;&lt;/font&gt;&lt;/h3&gt;&lt;ul data-start=&quot;1661&quot; data-end=&quot;1779&quot;&gt;&lt;li data-start=&quot;1661&quot; data-end=&quot;1779&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1663&quot; data-end=&quot;1742&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;TLA+ erlaubt &lt;strong data-start=&quot;1676&quot; data-end=&quot;1715&quot;&gt;nichtdeterministische Spezifikation&lt;/strong&gt; mit dem &lt;code data-start=&quot;1724&quot; data-end=&quot;1732&quot;&gt;CHOOSE&lt;/code&gt;-Operator:&lt;/font&gt;&lt;/p&gt;&lt;pre class=&quot;overflow-visible!&quot; data-start=&quot;1745&quot; data-end=&quot;1779&quot;&gt;&lt;div class=&quot;contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary&quot;&gt;&lt;div class=&quot;overflow-y-auto p-4&quot; dir=&quot;ltr&quot;&gt;&lt;code class=&quot;whitespace-pre! language-tla&quot;&gt;&lt;span&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;CHOOSE x ∈ S : P(x)&lt;/font&gt;&lt;/span&gt;&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr data-start=&quot;1781&quot; data-end=&quot;1784&quot; class=&quot;&quot;&gt;&lt;h3 data-start=&quot;1786&quot; data-end=&quot;1851&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;6. &lt;strong data-start=&quot;1793&quot; data-end=&quot;1851&quot;&gt;Fixpunkt-Theorie (implizit durch temporale Operatoren)&lt;/strong&gt;&lt;/font&gt;&lt;/h3&gt;&lt;ul data-start=&quot;1852&quot; data-end=&quot;2052&quot;&gt;&lt;li data-start=&quot;1852&quot; data-end=&quot;1935&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1854&quot; data-end=&quot;1935&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;code data-start=&quot;1854&quot; data-end=&quot;1883&quot;&gt;Spec == Init ∧ □[Next]_vars&lt;/code&gt; beschreibt ein unendliches Verhalten über Zustände.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1936&quot; data-end=&quot;2052&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;1938&quot; data-end=&quot;2052&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Diese Definitionen basieren auf Konzepten aus der &lt;strong data-start=&quot;1988&quot; data-end=&quot;2008&quot;&gt;Fixpunkt-Theorie&lt;/strong&gt;, auch wenn sie nicht direkt erwähnt werden.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr data-start=&quot;2054&quot; data-end=&quot;2057&quot; class=&quot;&quot;&gt;&lt;h3 data-start=&quot;2059&quot; data-end=&quot;2103&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;7. &lt;strong data-start=&quot;2066&quot; data-end=&quot;2103&quot;&gt;Abstrakte Algebraische Strukturen&lt;/strong&gt;&lt;/font&gt;&lt;/h3&gt;&lt;ul data-start=&quot;2104&quot; data-end=&quot;2225&quot;&gt;&lt;li data-start=&quot;2104&quot; data-end=&quot;2225&quot; class=&quot;&quot;&gt;&lt;p data-start=&quot;2106&quot; data-end=&quot;2225&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Funktionen, Sequenzen, Tupel etc. sind allesamt Mengenstrukturen und können rekursiv oder algebraisch behandelt werden.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" link="&lt;h2 data-start=&quot;390&quot; data-end=&quot;441&quot; class=&quot;&quot;&gt;Die zentralen mathematischen Methoden in TLA+&lt;/h2&gt;&#xa;&lt;h3 data-start=&quot;443&quot; data-end=&quot;473&quot; class=&quot;&quot;&gt;1. &lt;strong data-start=&quot;450&quot; data-end=&quot;473&quot;&gt;Mengentheorie (ZFC)&lt;/strong&gt;&lt;/h3&gt;&#xa;&lt;ul data-start=&quot;474&quot; data-end=&quot;719&quot;&gt;&#xa;&lt;li data-start=&quot;474&quot; data-end=&quot;576&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;476&quot; data-end=&quot;576&quot; class=&quot;&quot;&gt;TLA+ verwendet die klassische &lt;strong data-start=&quot;506&quot; data-end=&quot;561&quot;&gt;Zermelo-Fraenkel-Mengenlehre mit Auswahlaxiom (ZFC)&lt;/strong&gt; als Grundlage.&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;li data-start=&quot;577&quot; data-end=&quot;666&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;579&quot; data-end=&quot;666&quot; class=&quot;&quot;&gt;Alle Datenstrukturen wie Mengen, Sequenzen, Funktionen, Tupel etc. basieren auf Mengen.&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;li data-start=&quot;667&quot; data-end=&quot;719&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;669&quot; data-end=&quot;678&quot; class=&quot;&quot;&gt;Beispiel:&lt;/p&gt;&#xa;&lt;pre class=&quot;overflow-visible!&quot; data-start=&quot;681&quot; data-end=&quot;719&quot;&gt;&lt;div class=&quot;contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary&quot;&gt;&lt;div class=&quot;flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]&quot;&gt;tla&lt;/div&gt;&lt;div class=&quot;sticky top-9&quot;&gt;&lt;div class=&quot;absolute end-0 bottom-0 flex h-9 items-center pe-2&quot;&gt;&lt;div class=&quot;bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs&quot;&gt;&lt;button class=&quot;flex gap-1 items-center select-none px-4 py-1&quot; aria-label=&quot;Copy&quot;&gt;&lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon-xs&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Copy&lt;/button&gt;&lt;span class=&quot;&quot; data-state=&quot;closed&quot;&gt;&lt;button class=&quot;flex items-center gap-1 px-4 py-1 select-none&quot;&gt;&lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon-xs&quot;&gt;&lt;path d=&quot;M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z&quot; fill=&quot;currentColor&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14.5 7L18.5 11&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Edit&lt;/button&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;overflow-y-auto p-4&quot; dir=&quot;ltr&quot;&gt;&lt;code class=&quot;whitespace-pre! language-tla&quot;&gt;&lt;span&gt;S == {x ∈ Nat : x &amp;lt; 10}&#xa;&lt;/span&gt;&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&#xa;&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;hr data-start=&quot;721&quot; data-end=&quot;724&quot; class=&quot;&quot;&gt;&#xa;&lt;h3 data-start=&quot;726&quot; data-end=&quot;784&quot; class=&quot;&quot;&gt;2. &lt;strong data-start=&quot;733&quot; data-end=&quot;784&quot;&gt;Prädikatenlogik (Prädikatenkalkül erster Stufe)&lt;/strong&gt;&lt;/h3&gt;&#xa;&lt;ul data-start=&quot;785&quot; data-end=&quot;959&quot;&gt;&#xa;&lt;li data-start=&quot;785&quot; data-end=&quot;872&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;787&quot; data-end=&quot;872&quot; class=&quot;&quot;&gt;Aussagenlogik mit Quantoren (&lt;code data-start=&quot;816&quot; data-end=&quot;819&quot;&gt;∀&lt;/code&gt;, &lt;code data-start=&quot;821&quot; data-end=&quot;824&quot;&gt;∃&lt;/code&gt;) und logischen Operatoren (&lt;code data-start=&quot;852&quot; data-end=&quot;855&quot;&gt;⇒&lt;/code&gt;, &lt;code data-start=&quot;857&quot; data-end=&quot;860&quot;&gt;∧&lt;/code&gt;, &lt;code data-start=&quot;862&quot; data-end=&quot;865&quot;&gt;∨&lt;/code&gt;, &lt;code data-start=&quot;867&quot; data-end=&quot;870&quot;&gt;¬&lt;/code&gt;).&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;li data-start=&quot;873&quot; data-end=&quot;959&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;875&quot; data-end=&quot;959&quot; class=&quot;&quot;&gt;Wird verwendet, um Bedingungen, Invarianten, Vor-/Nachbedingungen usw. auszudrücken.&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;hr data-start=&quot;961&quot; data-end=&quot;964&quot; class=&quot;&quot;&gt;&#xa;&lt;h3 data-start=&quot;966&quot; data-end=&quot;1022&quot; class=&quot;&quot;&gt;3. &lt;strong data-start=&quot;973&quot; data-end=&quot;1022&quot;&gt;Temporale Logik (Linear Temporal Logic – LTL)&lt;/strong&gt;&lt;/h3&gt;&#xa;&lt;ul data-start=&quot;1023&quot; data-end=&quot;1223&quot;&gt;&#xa;&lt;li data-start=&quot;1023&quot; data-end=&quot;1097&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;1025&quot; data-end=&quot;1097&quot; class=&quot;&quot;&gt;Erweiterung von Logik zur Beschreibung von &lt;strong data-start=&quot;1068&quot; data-end=&quot;1096&quot;&gt;zeitabhängigem Verhalten&lt;/strong&gt;.&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;li data-start=&quot;1098&quot; data-end=&quot;1223&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;1100&quot; data-end=&quot;1124&quot; class=&quot;&quot;&gt;Ermöglicht Aussagen wie:&lt;/p&gt;&#xa;&lt;ul data-start=&quot;1127&quot; data-end=&quot;1223&quot;&gt;&#xa;&lt;li data-start=&quot;1127&quot; data-end=&quot;1146&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;1129&quot; data-end=&quot;1146&quot; class=&quot;&quot;&gt;&lt;code data-start=&quot;1129&quot; data-end=&quot;1134&quot;&gt;□ P&lt;/code&gt; (&quot;immer P&quot;)&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;li data-start=&quot;1149&quot; data-end=&quot;1173&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;1151&quot; data-end=&quot;1173&quot; class=&quot;&quot;&gt;&lt;code data-start=&quot;1151&quot; data-end=&quot;1156&quot;&gt;◇ P&lt;/code&gt; (&quot;irgendwann P&quot;)&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;li data-start=&quot;1176&quot; data-end=&quot;1223&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;1178&quot; data-end=&quot;1223&quot; class=&quot;&quot;&gt;&lt;code data-start=&quot;1178&quot; data-end=&quot;1187&quot;&gt;P ⇒ ◇ Q&lt;/code&gt; (&quot;wenn P, dann folgt irgendwann Q&quot;)&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;p data-start=&quot;1225&quot; data-end=&quot;1330&quot; class=&quot;&quot;&gt;Diese ist entscheidend für die &lt;strong data-start=&quot;1256&quot; data-end=&quot;1317&quot;&gt;spezifikationsorientierte Beschreibung von Zustandsfolgen&lt;/strong&gt; in Systemen.&lt;/p&gt;&#xa;&lt;hr data-start=&quot;1332&quot; data-end=&quot;1335&quot; class=&quot;&quot;&gt;&#xa;&lt;h3 data-start=&quot;1337&quot; data-end=&quot;1384&quot; class=&quot;&quot;&gt;4. &lt;strong data-start=&quot;1344&quot; data-end=&quot;1384&quot;&gt;Modellierung durch Zustandsübergänge&lt;/strong&gt;&lt;/h3&gt;&#xa;&lt;ul data-start=&quot;1385&quot; data-end=&quot;1539&quot;&gt;&#xa;&lt;li data-start=&quot;1385&quot; data-end=&quot;1440&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;1387&quot; data-end=&quot;1440&quot; class=&quot;&quot;&gt;Zustände werden durch &lt;strong data-start=&quot;1409&quot; data-end=&quot;1427&quot;&gt;Variablenwerte&lt;/strong&gt; beschrieben.&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;li data-start=&quot;1441&quot; data-end=&quot;1539&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;1443&quot; data-end=&quot;1539&quot; class=&quot;&quot;&gt;Übergänge sind &lt;strong data-start=&quot;1458&quot; data-end=&quot;1470&quot;&gt;Aktionen&lt;/strong&gt;: logische Ausdrücke über aktuelle (&lt;code data-start=&quot;1506&quot; data-end=&quot;1509&quot;&gt;x&lt;/code&gt;) und nächste (&lt;code data-start=&quot;1524&quot; data-end=&quot;1528&quot;&gt;x&#39;&lt;/code&gt;) Zustände.&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;p data-start=&quot;1541&quot; data-end=&quot;1550&quot; class=&quot;&quot;&gt;Beispiel:&lt;/p&gt;&#xa;&lt;pre class=&quot;overflow-visible!&quot; data-start=&quot;1551&quot; data-end=&quot;1604&quot;&gt;&lt;div class=&quot;contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary&quot;&gt;&lt;div class=&quot;flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]&quot;&gt;tla&lt;/div&gt;&lt;div class=&quot;sticky top-9&quot;&gt;&lt;div class=&quot;absolute end-0 bottom-0 flex h-9 items-center pe-2&quot;&gt;&lt;div class=&quot;bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs&quot;&gt;&lt;button class=&quot;flex gap-1 items-center select-none px-4 py-1&quot; aria-label=&quot;Copy&quot;&gt;&lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon-xs&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Copy&lt;/button&gt;&lt;span class=&quot;&quot; data-state=&quot;closed&quot;&gt;&lt;button class=&quot;flex items-center gap-1 px-4 py-1 select-none&quot;&gt;&lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon-xs&quot;&gt;&lt;path d=&quot;M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z&quot; fill=&quot;currentColor&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14.5 7L18.5 11&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Edit&lt;/button&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;overflow-y-auto p-4&quot; dir=&quot;ltr&quot;&gt;&lt;code class=&quot;whitespace-pre! language-tla&quot;&gt;&lt;span&gt;Next == ∨ x&#39; = x + 1&#xa;         ∨ x&#39; = x - 1&#xa;&lt;/span&gt;&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&#xa;&lt;hr data-start=&quot;1606&quot; data-end=&quot;1609&quot; class=&quot;&quot;&gt;&#xa;&lt;h3 data-start=&quot;1611&quot; data-end=&quot;1660&quot; class=&quot;&quot;&gt;5. &lt;strong data-start=&quot;1618&quot; data-end=&quot;1660&quot;&gt;Nichtdeterminismus und CHOOSE-Operator&lt;/strong&gt;&lt;/h3&gt;&#xa;&lt;ul data-start=&quot;1661&quot; data-end=&quot;1779&quot;&gt;&#xa;&lt;li data-start=&quot;1661&quot; data-end=&quot;1779&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;1663&quot; data-end=&quot;1742&quot; class=&quot;&quot;&gt;TLA+ erlaubt &lt;strong data-start=&quot;1676&quot; data-end=&quot;1715&quot;&gt;nichtdeterministische Spezifikation&lt;/strong&gt; mit dem &lt;code data-start=&quot;1724&quot; data-end=&quot;1732&quot;&gt;CHOOSE&lt;/code&gt;-Operator:&lt;/p&gt;&#xa;&lt;pre class=&quot;overflow-visible!&quot; data-start=&quot;1745&quot; data-end=&quot;1779&quot;&gt;&lt;div class=&quot;contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary&quot;&gt;&lt;div class=&quot;flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]&quot;&gt;tla&lt;/div&gt;&lt;div class=&quot;sticky top-9&quot;&gt;&lt;div class=&quot;absolute end-0 bottom-0 flex h-9 items-center pe-2&quot;&gt;&lt;div class=&quot;bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs&quot;&gt;&lt;button class=&quot;flex gap-1 items-center select-none px-4 py-1&quot; aria-label=&quot;Copy&quot;&gt;&lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon-xs&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z&quot; fill=&quot;currentColor&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Copy&lt;/button&gt;&lt;span class=&quot;&quot; data-state=&quot;closed&quot;&gt;&lt;button class=&quot;flex items-center gap-1 px-4 py-1 select-none&quot;&gt;&lt;svg width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; class=&quot;icon-xs&quot;&gt;&lt;path d=&quot;M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z&quot; fill=&quot;currentColor&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M14.5 7L18.5 11&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;/path&gt;&lt;/svg&gt;Edit&lt;/button&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;overflow-y-auto p-4&quot; dir=&quot;ltr&quot;&gt;&lt;code class=&quot;whitespace-pre! language-tla&quot;&gt;&lt;span&gt;CHOOSE x ∈ S : P(x)&#xa;&lt;/span&gt;&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&#xa;&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;hr data-start=&quot;1781&quot; data-end=&quot;1784&quot; class=&quot;&quot;&gt;&#xa;&lt;h3 data-start=&quot;1786&quot; data-end=&quot;1851&quot; class=&quot;&quot;&gt;6. &lt;strong data-start=&quot;1793&quot; data-end=&quot;1851&quot;&gt;Fixpunkt-Theorie (implizit durch temporale Operatoren)&lt;/strong&gt;&lt;/h3&gt;&#xa;&lt;ul data-start=&quot;1852&quot; data-end=&quot;2052&quot;&gt;&#xa;&lt;li data-start=&quot;1852&quot; data-end=&quot;1935&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;1854&quot; data-end=&quot;1935&quot; class=&quot;&quot;&gt;&lt;code data-start=&quot;1854&quot; data-end=&quot;1883&quot;&gt;Spec == Init ∧ □[Next]_vars&lt;/code&gt; beschreibt ein unendliches Verhalten über Zustände.&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;li data-start=&quot;1936&quot; data-end=&quot;2052&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;1938&quot; data-end=&quot;2052&quot; class=&quot;&quot;&gt;Diese Definitionen basieren auf Konzepten aus der &lt;strong data-start=&quot;1988&quot; data-end=&quot;2008&quot;&gt;Fixpunkt-Theorie&lt;/strong&gt;, auch wenn sie nicht direkt erwähnt werden.&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;hr data-start=&quot;2054&quot; data-end=&quot;2057&quot; class=&quot;&quot;&gt;&#xa;&lt;h3 data-start=&quot;2059&quot; data-end=&quot;2103&quot; class=&quot;&quot;&gt;7. &lt;strong data-start=&quot;2066&quot; data-end=&quot;2103&quot;&gt;Abstrakte Algebraische Strukturen&lt;/strong&gt;&lt;/h3&gt;&#xa;&lt;ul data-start=&quot;2104&quot; data-end=&quot;2225&quot;&gt;&#xa;&lt;li data-start=&quot;2104&quot; data-end=&quot;2225&quot; class=&quot;&quot;&gt;&#xa;&lt;p data-start=&quot;2106&quot; data-end=&quot;2225&quot; class=&quot;&quot;&gt;Funktionen, Sequenzen, Tupel etc. sind allesamt Mengenstrukturen und können rekursiv oder algebraisch behandelt werden.&lt;/p&gt;&#xa;&lt;/li&gt;&#xa;&lt;/ul&gt;&#xa;&lt;hr data-start=&quot;2227&quot; data-end=&quot;2230&quot; class=&quot;&quot;&gt;" id="Y17dlTpZqpL1KkGba9Ol-0">
+          <mxCell style="text;whiteSpace=wrap;html=1;" parent="Q8x_BsgLaWqH_rQuEiCD-1" vertex="1">
+            <mxGeometry x="115" y="142" width="981" height="927" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Herausforderung" id="B_mfWJt7UfB3a8f9ujVh">
+    <mxGraphModel dx="1426" dy="849" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="4paMhIsNzOWbaF31f6N7-0" />
+        <mxCell id="4paMhIsNzOWbaF31f6N7-1" parent="4paMhIsNzOWbaF31f6N7-0" />
+        <mxCell id="4paMhIsNzOWbaF31f6N7-2" value="&lt;h2 style=&quot;text-align: left;&quot; data-start=&quot;390&quot; data-end=&quot;441&quot; class=&quot;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;Was ist die Herausforderung mit TLA+?&lt;/font&gt;&lt;/h2&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=40;" vertex="1" parent="4paMhIsNzOWbaF31f6N7-1">
+          <mxGeometry x="118" y="70" width="922" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="3IIlwFcZTXhRNVUM3Zh0-0" value="&lt;u&gt;Brannon Batson (Intel):&lt;/u&gt;&lt;div&gt;&lt;br&gt;The hard part of learning to write TLA+ specs is learning&lt;b&gt; to think abstractly about&lt;/b&gt; the system.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The difficulty lay not in the use of TLA+ - engineers frequently learn new programming languages - but rather in&amp;nbsp;&lt;b&gt;determining the layer of abstraction.&lt;/b&gt;&amp;nbsp;... TLA+ forces engineers to think ... abstractly, which they &lt;b&gt;often find unnatural&lt;/b&gt;...&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;u&gt;Eric Verhulst (Operating System for the European Space Agency’s Rosetta spacecraft):&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The TLA+ abstraction helped a lot in coming to a much cleaner architecture.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;We witnessed first hand the&lt;b&gt; brain washing&lt;/b&gt; done by years of C programming.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;One of the results was that the&lt;b&gt; code size&lt;/b&gt; is about 10&lt;b&gt; times less&lt;/b&gt; than the previous version.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=20;" vertex="1" parent="4paMhIsNzOWbaF31f6N7-1">
+          <mxGeometry x="122" y="146" width="962" height="476" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Anforderung" id="cJBLPNk5J7Vrl_S2860g">
+    <mxGraphModel dx="1426" dy="849" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oOggBchXGIw22GiViCg1-1" value="Die Pizzabestellung" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=42;" parent="1" vertex="1">
+          <mxGeometry x="362" y="63" width="419" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="oOggBchXGIw22GiViCg1-2" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;1. Initiiere den Prozeß (&lt;/font&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Sag allen, daß du Pizza bestellst.)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;2. Erhalte Rückmeldung von allen (Jeder meldet sich).&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;3. Bestätige die Auswahl aller. (Sobald sich jeder eine Pizza ausgesucht hat, wird die Liste laut vorgelesen.)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;4. Jeder bestätigt. (Falls es ein Mißverständnis gab, wird von vorne begonnen.)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;5. Der Prozeß ist abgeschlossen (Du bestellst die Pizzen.)&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="64" y="139" width="782" height="193" as="geometry" />
+        </mxCell>
+        <mxCell id="oOggBchXGIw22GiViCg1-11" value="Ich bestelle Pizza." style="image;html=1;image=img/lib/clip_art/people/Suit_Man_128x128.png;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="235" y="454" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jhopvCgXfXrXl4l1MUJN-1" value="(*&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(102, 102, 102), rgb(149, 149, 149));&quot;&gt;Prozeß&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(102, 102, 102), rgb(149, 149, 149));&quot;&gt;auf allen Ebenen möglich: CPU Prozesse bis Geschäftsmodellierung&lt;/span&gt;&lt;div&gt;*)&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="39" y="698" width="478" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="oOggBchXGIw22GiViCg1-15" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="276" width="595" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="oOggBchXGIw22GiViCg1-12" value="&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; font-size: 16px; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Pizza&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; font-size: 16px; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Salami&lt;/span&gt;&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_Green_128x128.png;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="664" y="421" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oOggBchXGIw22GiViCg1-13" value="&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Pizza Tonno&lt;/span&gt;" style="image;html=1;image=img/lib/clip_art/people/Military_Officer_Woman_128x128.png;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="848" y="474" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oOggBchXGIw22GiViCg1-14" value="&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Pizza Margherita&lt;/span&gt;" style="image;html=1;image=img/lib/clip_art/people/Suit_Woman_Green_128x128.png;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="717.5" y="609" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="STiq30Xc0A3U-H4Ju2QL" name="Der übliche Weg">
+    <mxGraphModel dx="1896" dy="983" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DVaxMyGTTFM4_N-_1-kV-3" value="&lt;font face=&quot;Courier New&quot;&gt;Ingenieure konzentrieren sich natürlich darauf, den „Happy Case“ für ein System zu entwerfen, also den Verarbeitungspfad, bei dem &lt;b&gt;keine Fehler&lt;/b&gt; auftreten.&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;Das ist verständlich, da der Happy Case der bei weitem häufigste Fall ist. Dieser Codepfad muss das Kundenproblem lösen, gut funktionieren, Ressourcen effizient nutzen und mit dem Unternehmen skalieren – alles für sich gesehen wichtige Herausforderungen.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;Wenn der Entwurf für den Happy Case fertig ist, versucht der Ingenieur anhand seiner &lt;b&gt;persönlichen Erfahrungen&lt;/b&gt; und der von Kollegen und Gutachtern herauszufinden, „was schiefgehen &lt;b&gt;könnte&lt;/b&gt;“. Für diese Szenarien fügt er dann Abhilfemaßnahmen hinzu, &lt;b&gt;priorisiert nach Intuition&lt;/b&gt; und vielleicht &lt;b&gt;Statistiken zur Eintrittswahrscheinlichkeit&lt;/b&gt;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;Fast immer&lt;/b&gt; schreckt der Ingenieur davor zurück, „&lt;b&gt;extrem seltene&lt;/b&gt;“ Ereigniskombinationen zu behandeln, da es zu viele solcher Szenarien gibt, um sie sich &lt;b&gt;vorzustellen zu können&lt;/b&gt;.&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Courier New&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Courier New&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Courier New&quot;&gt;Quelle&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Courier New&quot;&gt;https://cacm.acm.org/research/how-amazon-web-services-uses-formal-methods/&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="115" y="50" width="958" height="698" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="LqNpiU0G4Uvcfgcm95Mx" name="BPMN">
+    <mxGraphModel dx="1426" dy="849" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hkl0cm72MW7JQYwOana1-1" value="Pool" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="140" y="23" width="1818" height="347.5" as="geometry" />
+        </mxCell>
+        <mxCell id="hkl0cm72MW7JQYwOana1-2" value="Initiator" style="swimlane;html=1;startSize=20;horizontal=0;" parent="hkl0cm72MW7JQYwOana1-1" vertex="1">
+          <mxGeometry y="20" width="1818" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-2" source="1Zo3Y0gMBxRbPMCGKhVd-7" target="1Zo3Y0gMBxRbPMCGKhVd-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-7" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" parent="hkl0cm72MW7JQYwOana1-2" vertex="1">
+          <mxGeometry x="55" y="35" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-2" source="1Zo3Y0gMBxRbPMCGKhVd-8" target="1Zo3Y0gMBxRbPMCGKhVd-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-8" value="Ich bestelle Pizza." style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="hkl0cm72MW7JQYwOana1-2" vertex="1">
+          <mxGeometry x="142" y="34" width="120" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-11" value="Mitteilung an all" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=send;" parent="hkl0cm72MW7JQYwOana1-2" vertex="1">
+          <mxGeometry x="299" y="33" width="120" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-2" source="1Zo3Y0gMBxRbPMCGKhVd-18" target="1Zo3Y0gMBxRbPMCGKhVd-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-18" value="Bestellung erhalten" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=receive;" parent="hkl0cm72MW7JQYwOana1-2" vertex="1">
+          <mxGeometry x="613" y="35" width="120" height="54.5" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-21" value="Bestätigen" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=send;" parent="hkl0cm72MW7JQYwOana1-2" vertex="1">
+          <mxGeometry x="945" y="35" width="120" height="53.5" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-2" source="1Zo3Y0gMBxRbPMCGKhVd-20" target="1Zo3Y0gMBxRbPMCGKhVd-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-20" value="Bestellung notieren" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="hkl0cm72MW7JQYwOana1-2" vertex="1">
+          <mxGeometry x="779" y="35" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-2" source="1Zo3Y0gMBxRbPMCGKhVd-34" target="1Zo3Y0gMBxRbPMCGKhVd-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-34" value="Bestätigung erhalten" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=receive;" parent="hkl0cm72MW7JQYwOana1-2" vertex="1">
+          <mxGeometry x="1406" y="35" width="120" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-2" source="1Zo3Y0gMBxRbPMCGKhVd-37" target="1Zo3Y0gMBxRbPMCGKhVd-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-37" value="Pizza bestellen" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="hkl0cm72MW7JQYwOana1-2" vertex="1">
+          <mxGeometry x="1573" y="37" width="120" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-6" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" parent="hkl0cm72MW7JQYwOana1-2" vertex="1">
+          <mxGeometry x="1745" y="39" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hkl0cm72MW7JQYwOana1-3" value="Besteller" style="swimlane;html=1;startSize=20;horizontal=0;" parent="hkl0cm72MW7JQYwOana1-1" vertex="1">
+          <mxGeometry y="194" width="1818" height="153.5" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-3" source="1Zo3Y0gMBxRbPMCGKhVd-10" target="1Zo3Y0gMBxRbPMCGKhVd-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-10" value="Es wird Pizza bestellt" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=receive;" parent="hkl0cm72MW7JQYwOana1-3" vertex="1">
+          <mxGeometry x="299" y="31.5" width="120" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-3" source="1Zo3Y0gMBxRbPMCGKhVd-14" target="1Zo3Y0gMBxRbPMCGKhVd-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-14" value="Pizza auswählen" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="hkl0cm72MW7JQYwOana1-3" vertex="1">
+          <mxGeometry x="461" y="31.5" width="120" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-16" value="Auswahl mitteilen" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=send;" parent="hkl0cm72MW7JQYwOana1-3" vertex="1">
+          <mxGeometry x="613" y="30.75" width="120" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-3" source="1Zo3Y0gMBxRbPMCGKhVd-25" target="1Zo3Y0gMBxRbPMCGKhVd-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-25" value="Bestätigung erhalten" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=receive;" parent="hkl0cm72MW7JQYwOana1-3" vertex="1">
+          <mxGeometry x="945" y="30.75" width="120" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-3" source="1Zo3Y0gMBxRbPMCGKhVd-27" target="1Zo3Y0gMBxRbPMCGKhVd-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-27" value="Bestätigung mit eigener Bestellung vergleichen" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="hkl0cm72MW7JQYwOana1-3" vertex="1">
+          <mxGeometry x="1105" y="21.25" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-3" source="1Zo3Y0gMBxRbPMCGKhVd-29" target="1Zo3Y0gMBxRbPMCGKhVd-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-41" value="JA" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1Zo3Y0gMBxRbPMCGKhVd-35" vertex="1" connectable="0">
+          <mxGeometry x="-0.0488" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-29" value="Stimmt die Bestätigung?" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;" parent="hkl0cm72MW7JQYwOana1-3" vertex="1">
+          <mxGeometry x="1279" y="36.25" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-33" value="Mitteilung&lt;br&gt;&quot;PASST!&quot;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=send;" parent="hkl0cm72MW7JQYwOana1-3" vertex="1">
+          <mxGeometry x="1406" y="21.25" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="hkl0cm72MW7JQYwOana1-3" source="1Zo3Y0gMBxRbPMCGKhVd-29" target="1Zo3Y0gMBxRbPMCGKhVd-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1304" y="-40" />
+              <mxPoint x="521" y="-40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-32" value="NEIN" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1Zo3Y0gMBxRbPMCGKhVd-31" vertex="1" connectable="0">
+          <mxGeometry x="-0.1565" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="hkl0cm72MW7JQYwOana1-1" source="1Zo3Y0gMBxRbPMCGKhVd-11" target="1Zo3Y0gMBxRbPMCGKhVd-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-1" source="1Zo3Y0gMBxRbPMCGKhVd-16" target="1Zo3Y0gMBxRbPMCGKhVd-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-1" source="1Zo3Y0gMBxRbPMCGKhVd-21" target="1Zo3Y0gMBxRbPMCGKhVd-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="hkl0cm72MW7JQYwOana1-1" source="1Zo3Y0gMBxRbPMCGKhVd-33" target="1Zo3Y0gMBxRbPMCGKhVd-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ke-GaOMS9Xlzc9I3aWp3-1" value="Ich bestelle Pizza." style="image;html=1;image=img/lib/clip_art/people/Suit_Man_128x128.png;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="57" y="66" width="47" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-5" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="4" y="169" width="132" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-1" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1Zo3Y0gMBxRbPMCGKhVd-5" vertex="1">
+          <mxGeometry width="132" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-2" value="&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Pizza&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Salami&lt;/span&gt;&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_Green_128x128.png;fontSize=10;" parent="1Zo3Y0gMBxRbPMCGKhVd-5" vertex="1">
+          <mxGeometry x="30.066666666666663" y="22.694444444444446" width="29.333333333333332" height="31.85185185185185" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-3" value="&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Pizza Tonno&lt;/span&gt;" style="image;html=1;image=img/lib/clip_art/people/Military_Officer_Woman_128x128.png;fontSize=10;" parent="1Zo3Y0gMBxRbPMCGKhVd-5" vertex="1">
+          <mxGeometry x="75.16666666666666" y="35.43518518518519" width="29.333333333333332" height="31.85185185185185" as="geometry" />
+        </mxCell>
+        <mxCell id="1Zo3Y0gMBxRbPMCGKhVd-4" value="&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Pizza Margherita&lt;/span&gt;" style="image;html=1;image=img/lib/clip_art/people/Suit_Woman_Green_128x128.png;fontSize=10;" parent="1Zo3Y0gMBxRbPMCGKhVd-5" vertex="1">
+          <mxGeometry x="50.599999999999994" y="73.25925925925927" width="29.333333333333332" height="31.85185185185185" as="geometry" />
+        </mxCell>
+        <mxCell id="iOGsqFoiM1aWkG0o8WSV-1" value="(*&lt;div&gt;Detaillierungsgrad kann sehr unterschiedlich sein&lt;/div&gt;&lt;div&gt;wird schnell unübersichtlich&lt;/div&gt;&lt;div&gt;wichtige Details bleiben unbemerkt&lt;/div&gt;&lt;div&gt;ist nur eine statische Ansicht&lt;/div&gt;&lt;div&gt;*)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="39" y="657" width="294" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="5fLcHUj2bpbIJ00ACdvZ-1" value="Wie darstellen bei mehreren Teilnehmern?" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="203" y="338" width="120" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="b1q1xEeNThmMzOFK_VM--1" value="Synchronisation der Teilnehmer?" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1154" y="389" width="120" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2PivkNeovGJ_c5ySVu5a-1" value="Synchronisation der Teilnehmer?" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1634" y="392" width="120" height="57.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="LXc3zoAjGT7kpiuSQe2b" name="UML">
+    <mxGraphModel dx="1369" dy="849" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bqNNHtXl3q-XBdtZsFd3-1" target="bqNNHtXl3q-XBdtZsFd3-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bqNNHtXl3q-XBdtZsFd3-1" value="" style="ellipse;fillColor=strokeColor;html=1;" vertex="1" parent="1">
+          <mxGeometry x="136" y="58" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bqNNHtXl3q-XBdtZsFd3-2" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="136" y="651" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bqNNHtXl3q-XBdtZsFd3-3" target="fmixni_Ewg1bXm818RYC-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bqNNHtXl3q-XBdtZsFd3-3" value="Ich bestelle Pizza." style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="81" y="115" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S8ez0jkamic-tgIBZQbi-5" value="Initiator" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="409" y="58" width="100" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-13" value="Ich bestelle Pizza." style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="S8ez0jkamic-tgIBZQbi-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="93.9955172413793" as="sourcePoint" />
+            <mxPoint x="49.81034482758628" y="112.0644827586207" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="134" y="94.03" />
+              <mxPoint x="134" y="112.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="in8YKSfvmTTh_zwiTLb3-1" value="Bestellung notieren" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="S8ez0jkamic-tgIBZQbi-5" source="S8ez0jkamic-tgIBZQbi-6" target="S8ez0jkamic-tgIBZQbi-5">
+          <mxGeometry x="-0.0025" y="-12" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="134" y="223" />
+              <mxPoint x="134" y="256" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S8ez0jkamic-tgIBZQbi-6" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="S8ez0jkamic-tgIBZQbi-5">
+          <mxGeometry x="45" y="90" width="10" height="556" as="geometry" />
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fmixni_Ewg1bXm818RYC-1" target="5PgkviyghJcinS1jP2mT-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fmixni_Ewg1bXm818RYC-1" value="Pizza auswählen" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="81" y="209" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5PgkviyghJcinS1jP2mT-1" target="8Tmzkioyl_OhRkSX2_9t-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5PgkviyghJcinS1jP2mT-1" value="Bestellung notieren" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="81" y="293" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8Tmzkioyl_OhRkSX2_9t-1" value="Bestellung bestätigen" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="81" y="375" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-2" value="JA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8Tmzkioyl_OhRkSX2_9t-2" target="n_W4c0hOmrG_sh0oK0jc-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-3" value="NEIN" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8Tmzkioyl_OhRkSX2_9t-2" target="fmixni_Ewg1bXm818RYC-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="287" y="474" />
+              <mxPoint x="287" y="229" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8Tmzkioyl_OhRkSX2_9t-2" value="Ist Bestellung korrekt?" style="rhombus;align=left;labelPosition=right;verticalLabelPosition=middle;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="136" y="459" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="n_W4c0hOmrG_sh0oK0jc-1" target="bqNNHtXl3q-XBdtZsFd3-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-1" value="Pizza bestellen" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="81" y="542" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.48;entryY=0.074;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8Tmzkioyl_OhRkSX2_9t-1" target="8Tmzkioyl_OhRkSX2_9t-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-11" value="Besteller" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="622" y="58" width="100" height="673" as="geometry" />
+        </mxCell>
+        <mxCell id="pcGTXvD37kc3PJ6AOMpP-2" value="Bestellung prüfen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="n_W4c0hOmrG_sh0oK0jc-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="304.9999999999999" as="sourcePoint" />
+            <mxPoint x="55" y="328" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="115" y="305" />
+              <mxPoint x="115" y="328" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n_W4c0hOmrG_sh0oK0jc-12" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="n_W4c0hOmrG_sh0oK0jc-11">
+          <mxGeometry x="45" y="90" width="10" height="556" as="geometry" />
+        </mxCell>
+        <mxCell id="IP4UDXHArWnDhIETgs-j-1" value="Es wird Pizza bestellt." style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="463" y="209" as="sourcePoint" />
+            <mxPoint x="672.5" y="209" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cNhm7f3hxwTVhLDwZieh-1" value="Auswahl mitteilen" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="666" y="253" as="sourcePoint" />
+            <mxPoint x="463" y="253" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="afhaACMx4ZgvgsYWisUz-1" value="(*&lt;div&gt;Detaillierungsgrad kann sehr unterschiedlich sein&lt;/div&gt;&lt;div&gt;Sprache ist ungenau&lt;/div&gt;&lt;div&gt;UML ist sehr umfangreich (Spec hat z.Z. ~800 Seiten)&lt;/div&gt;&lt;div&gt;ist auch nur eine statische Ansicht über das was passieren KANN&lt;/div&gt;&lt;div&gt;*)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="32" y="711" width="375" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="pcGTXvD37kc3PJ6AOMpP-1" value="Bestellbestätigung" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="465" y="342" as="sourcePoint" />
+            <mxPoint x="672.5" y="342" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B41HbYqN3Wfyf0BKkL4y-1" value="alt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=170;" vertex="1" parent="1">
+          <mxGeometry x="419" y="394" width="290" height="289" as="geometry" />
+        </mxCell>
+        <mxCell id="B41HbYqN3Wfyf0BKkL4y-2" value="Bestellung ok" style="text;html=1;" vertex="1" parent="B41HbYqN3Wfyf0BKkL4y-1">
+          <mxGeometry width="100" height="20" relative="1" as="geometry">
+            <mxPoint x="20" y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B41HbYqN3Wfyf0BKkL4y-3" value="Bestellung falsch" style="line;strokeWidth=1;dashed=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;html=1;whiteSpace=wrap;" vertex="1" parent="B41HbYqN3Wfyf0BKkL4y-1">
+          <mxGeometry y="140" width="290" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="B41HbYqN3Wfyf0BKkL4y-4" value="Paßt!" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;dashed=1;rounded=0;" edge="1" parent="B41HbYqN3Wfyf0BKkL4y-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="246.5" y="88" as="sourcePoint" />
+            <mxPoint x="43.5" y="88" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="B41HbYqN3Wfyf0BKkL4y-5" value="Das hab ich nicht bestellt!" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;dashed=1;rounded=0;" edge="1" parent="B41HbYqN3Wfyf0BKkL4y-1">
+          <mxGeometry x="-0.0493" y="-13" width="160" relative="1" as="geometry">
+            <mxPoint x="246.5" y="225" as="sourcePoint" />
+            <mxPoint x="43.5" y="225" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CV5FUv8Fs7sI35-FV7w--1" value="Pizza bestellen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="B41HbYqN3Wfyf0BKkL4y-1" target="S8ez0jkamic-tgIBZQbi-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="46.19" y="107.99551724137928" as="sourcePoint" />
+            <mxPoint x="41" y="132" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="125" y="108" />
+              <mxPoint x="125" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CV5FUv8Fs7sI35-FV7w--2" value="Noch mal das Ganze" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" edge="1" parent="B41HbYqN3Wfyf0BKkL4y-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="46.19" y="240.99551724137928" as="sourcePoint" />
+            <mxPoint x="45" y="269" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="125" y="241" />
+              <mxPoint x="125" y="269" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CV5FUv8Fs7sI35-FV7w--3" target="sfHVbDR4kJWUaCQ2SCnc-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CV5FUv8Fs7sI35-FV7w--3" value="" style="ellipse;fillColor=strokeColor;html=1;" vertex="1" parent="1">
+          <mxGeometry x="945" y="58" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CV5FUv8Fs7sI35-FV7w--4" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" vertex="1" parent="1">
+          <mxGeometry x="945" y="550" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sfHVbDR4kJWUaCQ2SCnc-1" target="sfHVbDR4kJWUaCQ2SCnc-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-1" value="niemand hat bestellt" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="890" y="140" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sfHVbDR4kJWUaCQ2SCnc-2" target="sfHVbDR4kJWUaCQ2SCnc-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-2" value="Pizza ausgewählt" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="890" y="242" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sfHVbDR4kJWUaCQ2SCnc-3" target="CV5FUv8Fs7sI35-FV7w--4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-3" value="alle haben bestellt" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="890" y="445" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sfHVbDR4kJWUaCQ2SCnc-5" target="sfHVbDR4kJWUaCQ2SCnc-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sfHVbDR4kJWUaCQ2SCnc-5" target="sfHVbDR4kJWUaCQ2SCnc-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="855" y="368" />
+              <mxPoint x="855" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-5" value="Bestellung mitgeteilt" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="890" y="344" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-7" value="States nur für &quot;Initiator&quot; und auch für &quot;Besteller&quot;?" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1006" y="33" width="144" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="sfHVbDR4kJWUaCQ2SCnc-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sfHVbDR4kJWUaCQ2SCnc-2" target="sfHVbDR4kJWUaCQ2SCnc-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Untestbar" id="r038ddd-BVDvHj8CJ9OD">
+    <mxGraphModel dx="1896" dy="983" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="ZEMgZ8F73-U3cGfetDQd-0" />
+        <mxCell id="ZEMgZ8F73-U3cGfetDQd-1" parent="ZEMgZ8F73-U3cGfetDQd-0" />
+        <mxCell id="mweZyXWEJK8Q6qbhCZnw-0" value="Die Phase der untestbaren Logik" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=42;" parent="ZEMgZ8F73-U3cGfetDQd-1" vertex="1">
+          <mxGeometry x="244" y="57" width="682" height="73" as="geometry" />
+        </mxCell>
+        <mxCell id="-PgCpNWnMOoRtnAryO8U-0" value="Die üblichen Mittel und Methoden:&lt;div&gt;&lt;ul&gt;&lt;li&gt;herkömmliche Designdokumente bzw. Konzepte in Ingenieurs-Prosa&lt;/li&gt;&lt;li&gt;statische Diagramme&lt;/li&gt;&lt;li&gt;Pseudo-Code&lt;/li&gt;&lt;li&gt;Skizzen&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Was ist das Problem?&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Sie sind ungenau und interpretierbar.&lt;/li&gt;&lt;li&gt;Es gibt keine Möglichkeit, die Logik an sich und in ihrem zeitlichen Verlauf zu überprüfen.&lt;/li&gt;&lt;li&gt;Es gibt keine Klarheit über die Konsequenzen von Anforderungen.&lt;/li&gt;&lt;li&gt;Oftmal werden wirklich kritische Teile übersehen.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Lassen die daraus resultierende Probleme durch übliche Verifikationsmethoden finden?&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Code Review - nein&lt;/li&gt;&lt;li&gt;Deep Design Review - sehr selten&lt;/li&gt;&lt;li&gt;Static Code Analysis - nein&lt;/li&gt;&lt;li&gt;Stress Testing - falls ja, dann nur mit richtig hohem Aufwand&lt;/li&gt;&lt;li&gt;Test (Unit-, Integration- usw.) - falls ja, dann nur mit richtig hohem Aufwand&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;! Logische Bugs treten ggf. auch nur in bestimmten Konfigurationen auf -&amp;gt; Testkonfigurationen können gar nicht die Bugs finden&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=20;" parent="ZEMgZ8F73-U3cGfetDQd-1" vertex="1">
+          <mxGeometry x="129" y="161" width="962" height="622" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="TLA+ Beispiel" id="6FxUhMveJDx_LXGPvVvU">
+    <mxGraphModel dx="1896" dy="983" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="TlTAKJPCWfFIp0VC2qsN-0" />
+        <mxCell id="TlTAKJPCWfFIp0VC2qsN-1" parent="TlTAKJPCWfFIp0VC2qsN-0" />
+        <mxCell id="TlTAKJPCWfFIp0VC2qsN-2" value="&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;1. Zustandsmaschine&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;2. Refinement&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;3. Erste zeitliche Prüfung&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;4. Prozesse laufen weiter&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;5. Unentschlossenheit&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="TlTAKJPCWfFIp0VC2qsN-1" vertex="1">
+          <mxGeometry x="69" y="59" width="1002" height="524" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="BPMN 2" id="rWEOMPtkNKXY5knsUROE">
+    <mxGraphModel dx="1896" dy="983" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-0" />
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-1" parent="vGVIPl91yW_-tYxwsbLd-0" />
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-2" value="Pool" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;whiteSpace=wrap;" parent="vGVIPl91yW_-tYxwsbLd-1" vertex="1">
+          <mxGeometry x="140" y="23" width="1818" height="338" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-3" value="Initiator" style="swimlane;html=1;startSize=20;horizontal=0;" parent="vGVIPl91yW_-tYxwsbLd-2" vertex="1">
+          <mxGeometry y="20" width="1818" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-3" source="vGVIPl91yW_-tYxwsbLd-5" target="vGVIPl91yW_-tYxwsbLd-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-5" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" parent="vGVIPl91yW_-tYxwsbLd-3" vertex="1">
+          <mxGeometry x="55" y="35" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-3" source="vGVIPl91yW_-tYxwsbLd-7" target="vGVIPl91yW_-tYxwsbLd-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-7" value="Ich bestelle Pizza." style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="vGVIPl91yW_-tYxwsbLd-3" vertex="1">
+          <mxGeometry x="142" y="34" width="120" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-8" value="Mitteilung an all" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=send;" parent="vGVIPl91yW_-tYxwsbLd-3" vertex="1">
+          <mxGeometry x="299" y="33" width="120" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-3" source="vGVIPl91yW_-tYxwsbLd-10" target="vGVIPl91yW_-tYxwsbLd-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-10" value="Bestellung erhalten" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=receive;" parent="vGVIPl91yW_-tYxwsbLd-3" vertex="1">
+          <mxGeometry x="613" y="35" width="120" height="54.5" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-11" value="Bestätigen" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=send;" parent="vGVIPl91yW_-tYxwsbLd-3" vertex="1">
+          <mxGeometry x="945" y="35" width="120" height="53.5" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-3" source="vGVIPl91yW_-tYxwsbLd-13" target="vGVIPl91yW_-tYxwsbLd-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-13" value="Bestellung notieren" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="vGVIPl91yW_-tYxwsbLd-3" vertex="1">
+          <mxGeometry x="779" y="35" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-3" source="vGVIPl91yW_-tYxwsbLd-15" target="vGVIPl91yW_-tYxwsbLd-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-15" value="Bestätigung erhalten" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=receive;" parent="vGVIPl91yW_-tYxwsbLd-3" vertex="1">
+          <mxGeometry x="1406" y="35" width="120" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-3" source="vGVIPl91yW_-tYxwsbLd-17" target="vGVIPl91yW_-tYxwsbLd-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-17" value="Pizza bestellen" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="vGVIPl91yW_-tYxwsbLd-3" vertex="1">
+          <mxGeometry x="1573" y="37" width="120" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-18" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" parent="vGVIPl91yW_-tYxwsbLd-3" vertex="1">
+          <mxGeometry x="1745" y="39" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="my-FFschy3vLzNIsWKL3-2" value="&lt;div style=&quot;color: rgb(36, 41, 46); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #6f42c1;&quot;&gt;TellCoordinator&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=#d5e8d4;strokeColor=#82b366;opacity=30;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" vertex="1" parent="vGVIPl91yW_-tYxwsbLd-3">
+          <mxGeometry x="583" y="5" width="533" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-19" value="Besteller" style="swimlane;html=1;startSize=20;horizontal=0;" parent="vGVIPl91yW_-tYxwsbLd-2" vertex="1">
+          <mxGeometry y="194" width="1818" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-19" source="vGVIPl91yW_-tYxwsbLd-21" target="vGVIPl91yW_-tYxwsbLd-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-21" value="Es wird Pizza bestellt" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=receive;" parent="vGVIPl91yW_-tYxwsbLd-19" vertex="1">
+          <mxGeometry x="299" y="31.5" width="120" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-19" source="vGVIPl91yW_-tYxwsbLd-23" target="vGVIPl91yW_-tYxwsbLd-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-23" value="Pizza auswählen" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="vGVIPl91yW_-tYxwsbLd-19" vertex="1">
+          <mxGeometry x="461" y="31.5" width="120" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="my-FFschy3vLzNIsWKL3-1" value="&lt;div style=&quot;color: rgb(36, 41, 46); background-color: rgb(255, 255, 255); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;span style=&quot;color: #6f42c1;&quot;&gt;DecideOnPizza&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;glass=0;fillColor=#dae8fc;strokeColor=#6c8ebf;opacity=30;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" vertex="1" parent="vGVIPl91yW_-tYxwsbLd-23">
+          <mxGeometry x="-189" y="-41" width="486" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-24" value="Auswahl mitteilen" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=send;" parent="vGVIPl91yW_-tYxwsbLd-19" vertex="1">
+          <mxGeometry x="613" y="30.75" width="120" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-19" source="vGVIPl91yW_-tYxwsbLd-26" target="vGVIPl91yW_-tYxwsbLd-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-26" value="Bestätigung erhalten" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=receive;" parent="vGVIPl91yW_-tYxwsbLd-19" vertex="1">
+          <mxGeometry x="945" y="30.75" width="120" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="8EZkj-NEdY6pza75rI0w-1" value="&#xa;&lt;div style=&quot;color: #24292e;background-color: #ffffff;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #005cc5;&quot;&gt;ConfirmAll&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#xa;&#xa;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fillColor=#ffe6cc;strokeColor=#d79b00;opacity=20;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" vertex="1" parent="vGVIPl91yW_-tYxwsbLd-26">
+          <mxGeometry x="-39" y="-20.75" width="658" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-19" source="vGVIPl91yW_-tYxwsbLd-28" target="vGVIPl91yW_-tYxwsbLd-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-28" value="Bestätigung mit eigener Bestellung vergleichen" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;" parent="vGVIPl91yW_-tYxwsbLd-19" vertex="1">
+          <mxGeometry x="1105" y="21.25" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-19" source="vGVIPl91yW_-tYxwsbLd-31" target="vGVIPl91yW_-tYxwsbLd-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-30" value="JA" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="vGVIPl91yW_-tYxwsbLd-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.0488" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-31" value="Stimmt die Bestätigung?" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;" parent="vGVIPl91yW_-tYxwsbLd-19" vertex="1">
+          <mxGeometry x="1279" y="36.25" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-32" value="Mitteilung&lt;br&gt;&quot;PASST!&quot;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=send;" parent="vGVIPl91yW_-tYxwsbLd-19" vertex="1">
+          <mxGeometry x="1406" y="21.25" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="vGVIPl91yW_-tYxwsbLd-19" source="vGVIPl91yW_-tYxwsbLd-31" target="vGVIPl91yW_-tYxwsbLd-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1304" y="-23" />
+              <mxPoint x="521" y="-23" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-34" value="NEIN" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="vGVIPl91yW_-tYxwsbLd-33" vertex="1" connectable="0">
+          <mxGeometry x="-0.1565" relative="1" as="geometry">
+            <mxPoint x="-76" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="vGVIPl91yW_-tYxwsbLd-2" source="vGVIPl91yW_-tYxwsbLd-8" target="vGVIPl91yW_-tYxwsbLd-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-2" source="vGVIPl91yW_-tYxwsbLd-24" target="vGVIPl91yW_-tYxwsbLd-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-2" source="vGVIPl91yW_-tYxwsbLd-11" target="vGVIPl91yW_-tYxwsbLd-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-2" source="vGVIPl91yW_-tYxwsbLd-32" target="vGVIPl91yW_-tYxwsbLd-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-39" value="Ich bestelle Pizza." style="image;html=1;image=img/lib/clip_art/people/Suit_Man_128x128.png;fontSize=10;" parent="vGVIPl91yW_-tYxwsbLd-1" vertex="1">
+          <mxGeometry x="57" y="66" width="47" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-40" value="" style="group" parent="vGVIPl91yW_-tYxwsbLd-1" vertex="1" connectable="0">
+          <mxGeometry x="4" y="169" width="132" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-41" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="vGVIPl91yW_-tYxwsbLd-40" vertex="1">
+          <mxGeometry width="132" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-42" value="&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Pizza&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Salami&lt;/span&gt;&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/people/Suit_Man_Green_128x128.png;fontSize=10;" parent="vGVIPl91yW_-tYxwsbLd-40" vertex="1">
+          <mxGeometry x="30.066666666666663" y="22.694444444444446" width="29.333333333333332" height="31.85185185185185" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-43" value="&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Pizza Tonno&lt;/span&gt;" style="image;html=1;image=img/lib/clip_art/people/Military_Officer_Woman_128x128.png;fontSize=10;" parent="vGVIPl91yW_-tYxwsbLd-40" vertex="1">
+          <mxGeometry x="75.16666666666666" y="35.43518518518519" width="29.333333333333332" height="31.85185185185185" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-44" value="&lt;span style=&quot;color: rgb(36, 36, 36); font-family: roboto, Helvetica, Arial, sans-serif; text-align: left; text-wrap-mode: wrap; background-color: rgb(250, 248, 243);&quot;&gt;Pizza Margherita&lt;/span&gt;" style="image;html=1;image=img/lib/clip_art/people/Suit_Woman_Green_128x128.png;fontSize=10;" parent="vGVIPl91yW_-tYxwsbLd-40" vertex="1">
+          <mxGeometry x="50.599999999999994" y="73.25925925925927" width="29.333333333333332" height="31.85185185185185" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-45" value="(*&lt;div&gt;Detaillierungsgrad kann sehr unterschiedlich sein&lt;/div&gt;&lt;div&gt;wird schnell unübersichtlich&lt;/div&gt;&lt;div&gt;wichtige Details bleiben unbemerkt&lt;/div&gt;&lt;div&gt;ist nur eine statische Ansicht&lt;/div&gt;&lt;div&gt;*)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#666666;" parent="vGVIPl91yW_-tYxwsbLd-1" vertex="1">
+          <mxGeometry x="39" y="657" width="294" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-49" value="Synchronisation der Teilnehmer?" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#f8cecc;strokeColor=#b85450;" parent="vGVIPl91yW_-tYxwsbLd-1" vertex="1">
+          <mxGeometry x="1513" y="385" width="120" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="vGVIPl91yW_-tYxwsbLd-50" value="Wie darstellen bei mehreren Teilnehmern?" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#f8cecc;strokeColor=#b85450;" parent="vGVIPl91yW_-tYxwsbLd-1" vertex="1">
+          <mxGeometry x="203" y="338" width="120" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GoxD8IRDO8CwLX6_SZQC-1" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Implizite Annahme, daß&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;eine Entscheidung getroffen wird&lt;/span&gt;&lt;/div&gt;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;align=center;verticalAlign=middle;fillColor=#fff2cc;strokeColor=#d6b656;" parent="vGVIPl91yW_-tYxwsbLd-1" vertex="1">
+          <mxGeometry x="701" y="410" width="246" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="GoxD8IRDO8CwLX6_SZQC-2" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="vGVIPl91yW_-tYxwsbLd-1" source="vGVIPl91yW_-tYxwsbLd-23" target="GoxD8IRDO8CwLX6_SZQC-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="my-FFschy3vLzNIsWKL3-0" value="Synchronisation der Teilnehmer?" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="vGVIPl91yW_-tYxwsbLd-1">
+          <mxGeometry x="1124" y="385" width="120" height="57.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="i_nGFGQFItQA2Vy2zWi0" name="Quellen">
+    <mxGraphModel dx="1896" dy="983" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wcCr4Zjlvdy7BEdtX6OD-1" value="&lt;b&gt;Quellen&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Main Web Site&lt;/div&gt;&lt;div&gt;https://lamport.azurewebsites.net/tla/learning.html&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;For Learning&lt;/div&gt;&lt;div&gt;https://www.learntla.com/&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;TLA+ Video Course (theoretical and edgy)&lt;/div&gt;&lt;div&gt;https://www.youtube.com/results?search_query=tla%2B+course&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Blocking Queue (a&amp;nbsp;must watch)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;https://www.youtube.com/watch?v=wjsI0lTSjIo&amp;amp;t=2058s&lt;/div&gt;&lt;div&gt;https://github.com/lemmy/BlockingQueue/blob/main/&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Google Group (ask questons and get help)&lt;/div&gt;&lt;div&gt;https://groups.google.com/g/tlaplus&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;TLA+ in Practice and Theory (what&#39;s behind the scenes)&lt;/div&gt;&lt;div&gt;https://pron.github.io/tlaplus&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Multiple real-live examples&lt;/div&gt;&lt;div&gt;https://github.com/tlaplus/Examples/tree/master/specifications&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Two-phase Pizza Party&lt;/div&gt;&lt;div&gt;https://www.innoq.com/en/articles/2023/04/an-introduction-to-tla/&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Brannon Batson&lt;/div&gt;&lt;div&gt;https://lamport.azurewebsites.net/video/video1-script.pdf&lt;/div&gt;&lt;div&gt;https://lamport.azurewebsites.net/tla/intel-excerpt.html?back-link=industrial-use.html?unhideBut@EQhide-intel@AMPunhideDiv@EQintel&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Amazon&lt;/div&gt;&lt;div&gt;https://cacm.acm.org/research/how-amazon-web-services-uses-formal-methods/&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Elastic Search (real live example)&lt;/div&gt;&lt;div&gt;https://github.com/elastic/elasticsearch-formal-models/blob/master/data/tla/replication.tla&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="83" y="36" width="1034" height="721" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

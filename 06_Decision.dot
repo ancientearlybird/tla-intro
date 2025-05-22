@@ -1,0 +1,45 @@
+strict digraph DiskGraph {
+node [shape=box,style=rounded]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-8000180999651354617 [label="/\\ msgs = {}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 0]\n/\\ chosen = [Tom |-> \"Keine Pizza\"]",style = filled]
+-8000180999651354617 -> 4815233692546602143 [label="",color="black",fontcolor="black"];
+4815233692546602143 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 0]\n/\\ chosen = [Tom |-> \"Keine Pizza\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 0]\n/\\ chosen = [Tom |-> \"Keine Pizza\"]"];
+4815233692546602143 -> -8324341306389403827 [label="",color="black",fontcolor="black"];
+-8324341306389403827 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Salami\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Salami\"]"];
+4815233692546602143 -> -8619480272861857706 [label="",color="black",fontcolor="black"];
+-8619480272861857706 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Hawaii\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Hawaii\"]"];
+-8324341306389403827 -> -7376269455303364122 [label="",color="black",fontcolor="black"];
+-7376269455303364122 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Salami\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Salami\"]"];
+-8324341306389403827 -> -7081151814148772099 [label="",color="black",fontcolor="black"];
+-7081151814148772099 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Hawaii\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Keine Pizza\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Hawaii\"]"];
+-8324341306389403827 -> -7557304126933755026 [label="",color="black",fontcolor="black"];
+-7557304126933755026 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Salami\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Salami\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Salami\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Salami\"]"];
+-8619480272861857706 -> -7376269455303364122 [label="",color="black",fontcolor="black"];
+-8619480272861857706 -> -7081151814148772099 [label="",color="black",fontcolor="black"];
+-8619480272861857706 -> 2497042881378746556 [label="",color="black",fontcolor="black"];
+2497042881378746556 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Hawaii\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Hawaii\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Hawaii\"]\n/\\ choices = [Tom |-> 1]\n/\\ chosen = [Tom |-> \"Hawaii\"]"];
+-7376269455303364122 -> -9023865366377574971 [label="",color="black",fontcolor="black"];
+-9023865366377574971 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Salami\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Salami\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Salami\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Salami\"]"];
+-7081151814148772099 -> 3998214502610359831 [label="",color="black",fontcolor="black"];
+3998214502610359831 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Hawaii\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Hawaii\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Hawaii\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Hawaii\"]"];
+-7557304126933755026 -> -9023865366377574971 [label="",color="black",fontcolor="black"];
+-7557304126933755026 -> -8729029748345941282 [label="",color="black",fontcolor="black"];
+-8729029748345941282 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Salami\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Hawaii\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Salami\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Hawaii\"]"];
+-7557304126933755026 -> -7557304126933755026 [label="",color="black",fontcolor="black"];
+2497042881378746556 -> 3703094807925573900 [label="",color="black",fontcolor="black"];
+3703094807925573900 [label="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Hawaii\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Salami\"]",tooltip="/\\ msgs = {[type |-> \"DecideOnPizza\"]}\n/\\ ordered = [Tom |-> \"Hawaii\"]\n/\\ choices = [Tom |-> 2]\n/\\ chosen = [Tom |-> \"Salami\"]"];
+2497042881378746556 -> 3998214502610359831 [label="",color="black",fontcolor="black"];
+2497042881378746556 -> 2497042881378746556 [label="",color="black",fontcolor="black"];
+-9023865366377574971 -> -9023865366377574971 [label="",color="black",fontcolor="black"];
+3998214502610359831 -> 3998214502610359831 [label="",color="black",fontcolor="black"];
+-8729029748345941282 -> 3998214502610359831 [label="",color="black",fontcolor="black"];
+3703094807925573900 -> -9023865366377574971 [label="",color="black",fontcolor="black"];
+{rank = same; -8000180999651354617;}
+{rank = same; 4815233692546602143;}
+{rank = same; -8324341306389403827;-8619480272861857706;}
+{rank = same; 2497042881378746556;-7376269455303364122;-7081151814148772099;-7557304126933755026;}
+{rank = same; 3998214502610359831;-8729029748345941282;3703094807925573900;-9023865366377574971;}
+}
+}
