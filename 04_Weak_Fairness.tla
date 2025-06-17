@@ -16,7 +16,7 @@ Messages ==
 TypeOK ==
     /\ DOMAIN ordered = PARTICIPANTS
     /\ DOMAIN chosen = PARTICIPANTS
-    /\ \A p \in PARTICIPANTS: 
+    /\ \A p \in PARTICIPANTS:
         /\ ordered[p] \in PIZZAS \union {NO_PIZZA}
         /\ chosen[p] \in PIZZAS \union {NO_PIZZA}
     /\ msgs \subseteq Messages
@@ -33,7 +33,7 @@ Init ==
     /\ ordered = [p \in PARTICIPANTS |-> NO_PIZZA]          \* shopping list: who -> which pizza
     /\ msgs = {}                                            \* no messages send yet
 
-(* send a message to ALL participants *) 
+(* send a message to ALL participants *)
 Announce ==
     /\ msgs = {}
     /\ msgs' = msgs \union {[type |-> "DecideOnPizza"]}
@@ -67,7 +67,7 @@ Next ==
         \/ TellCoordinator(p)
 
 Spec ==
-    /\ Init 
+    /\ Init
     /\ [][Next]_vars
     /\ \A p \in PARTICIPANTS:                                                  \* <<<<<<<<<<<<<<<<
         /\ WF_vars(DecideOnPizza(p))

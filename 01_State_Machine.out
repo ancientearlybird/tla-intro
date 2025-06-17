@@ -1,0 +1,262 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.20 of Day Month 20?? (rev: 96d6a1a)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 114 and seed -8172017078456955025 with 1 worker on 8 cores with 7264MB heap and 64MB offheap memory [pid: 6156] (Windows 10 10.0 amd64, Microsoft 21.0.6 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file C:\Users\gludwig\Projects\tla-intro\01_State_Machine.tla (file:/c:/Users/gludwig/Projects/tla-intro/01_State_Machine.tla)
+Parsing file C:\Users\gludwig\AppData\Local\Temp\tlc-3435495764135206582\TLC.tla (jar:file:/C:/Users/gludwig/.vscode/extensions/tlaplus.vscode-ide-2025.6.170401/tools/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file C:\Users\gludwig\AppData\Local\Temp\tlc-3435495764135206582\Naturals.tla (jar:file:/C:/Users/gludwig/.vscode/extensions/tlaplus.vscode-ide-2025.6.170401/tools/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\Users\gludwig\AppData\Local\Temp\tlc-3435495764135206582\Sequences.tla (jar:file:/C:/Users/gludwig/.vscode/extensions/tlaplus.vscode-ide-2025.6.170401/tools/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file C:\Users\gludwig\AppData\Local\Temp\tlc-3435495764135206582\FiniteSets.tla (jar:file:/C:/Users/gludwig/.vscode/extensions/tlaplus.vscode-ide-2025.6.170401/tools/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module 01_State_Machine
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2025-06-17 14:44:12)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2025-06-17 14:44:12.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2193:0 @!@!@
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 2.8E-12
+@!@!@ENDMSG 2193 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2025-06-17 14:44:12 (see https://explain.tlapl.us/module-coverage-statistics for how to interpret the following statistics).
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<msgs line 6, col 28 to line 6, col 31 of module 01_State_Machine>: 1
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<ordered line 6, col 19 to line 6, col 25 of module 01_State_Machine>: 66
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<chosen line 6, col 11 to line 6, col 16 of module 01_State_Machine>: 66
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 43, col 1 to line 43, col 4 of module 01_State_Machine>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 44, col 17 to line 44, col 49 of module 01_State_Machine: 1:3
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 44, col 24 to line 44, col 35 of module 01_State_Machine: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 45, col 18 to line 45, col 50 of module 01_State_Machine: 1:3
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 45, col 25 to line 45, col 36 of module 01_State_Machine: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 46, col 8 to line 46, col 16 of module 01_State_Machine: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 46, col 15 to line 46, col 16 of module 01_State_Machine: 1:4
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Announce line 49, col 1 to line 49, col 8 of module 01_State_Machine>: 1:1
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 50, col 8 to line 50, col 16 of module 01_State_Machine: 2199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 50, col 8 to line 50, col 11 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 50, col 15 to line 50, col 16 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 51, col 8 to line 51, col 55 of module 01_State_Machine: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 51, col 16 to line 51, col 55 of module 01_State_Machine: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 51, col 16 to line 51, col 19 of module 01_State_Machine: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 51, col 28 to line 51, col 55 of module 01_State_Machine: 1:17576
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 51, col 29 to line 51, col 54 of module 01_State_Machine: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 52, col 8 to line 52, col 36 of module 01_State_Machine: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<DecideOnPizza line 54, col 1 to line 54, col 26 of module 01_State_Machine>: 1647:19773
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 55, col 8 to line 55, col 42 of module 01_State_Machine: 13185
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 55, col 8 to line 55, col 33 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 55, col 39 to line 55, col 42 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 57, col 12 to line 57, col 59 of module 01_State_Machine: 19773
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 58, col 12 to line 58, col 38 of module 01_State_Machine: 19773
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 56, col 21 to line 56, col 26 of module 01_State_Machine: 6591
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<TellCoordinator line 61, col 1 to line 61, col 28 of module 01_State_Machine>: 549:6084
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 8 to line 62, col 38 of module 01_State_Machine: 12678
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 62, col 8 to line 62, col 26 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 62, col 31 to line 62, col 38 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 63, col 8 to line 63, col 71 of module 01_State_Machine: 6084
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 8 to line 64, col 33 of module 01_State_Machine: 6084
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<ConfirmAll line 66, col 1 to line 66, col 10 of module 01_State_Machine>: 0:65
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 68, col 12 to line 68, col 33 of module 01_State_Machine: 3279
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 68, col 12 to line 68, col 21 of module 01_State_Machine: 3084
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 68, col 25 to line 68, col 33 of module 01_State_Machine: 3084
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 67, col 17 to line 67, col 28 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 69, col 8 to line 69, col 42 of module 01_State_Machine: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<TypeOK line 18, col 1 to line 18, col 6 of module 01_State_Machine>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 19, col 5 to line 35, col 16 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 19, col 8 to line 19, col 36 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 20, col 8 to line 20, col 35 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 21, col 8 to line 23, col 49 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 22, col 9 to line 23, col 49 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 22, col 12 to line 22, col 50 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 22, col 12 to line 22, col 21 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 22, col 27 to line 22, col 50 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 22, col 27 to line 22, col 32 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||line 22, col 41 to line 22, col 50 of module 01_State_Machine: 6594:13188
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 22, col 42 to line 22, col 49 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 23, col 12 to line 23, col 49 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 23, col 12 to line 23, col 20 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 23, col 26 to line 23, col 49 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 23, col 26 to line 23, col 31 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||line 23, col 40 to line 23, col 49 of module 01_State_Machine: 6594:13188
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 23, col 41 to line 23, col 48 of module 01_State_Machine: 6594
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 21, col 17 to line 21, col 28 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 24, col 8 to line 24, col 30 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 25, col 8 to line 25, col 69 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 25, col 23 to line 25, col 69 of module 01_State_Machine: 2197
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 25, col 17 to line 25, col 20 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 26, col 8 to line 30, col 16 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 27, col 9 to line 30, col 16 of module 01_State_Machine: 2197
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 26, col 17 to line 26, col 20 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 31, col 8 to line 35, col 16 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 32, col 9 to line 35, col 16 of module 01_State_Machine: 2197
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 31, col 17 to line 31, col 20 of module 01_State_Machine: 2198
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(11) at 2025-06-17 14:44:12: 25.924 states generated (1.498.497 s/min), 2.198 distinct states found (127.052 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+25924 states generated, 2198 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 11.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 9 and the 95th percentile is 3).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1042ms at (2025-06-17 14:44:12)
+@!@!@ENDMSG 2186 @!@!@

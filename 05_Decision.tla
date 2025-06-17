@@ -21,7 +21,7 @@ Messages ==
 TypeOK ==
     /\ DOMAIN ordered = PARTICIPANTS
     /\ DOMAIN chosen = PARTICIPANTS
-    /\ \A p \in PARTICIPANTS: 
+    /\ \A p \in PARTICIPANTS:
         /\ ordered[p] \in PIZZAS \union {NO_PIZZA}
         /\ chosen[p] \in PIZZAS \union {NO_PIZZA}
     /\ msgs \subseteq Messages
@@ -40,7 +40,7 @@ Init ==
     /\ msgs = {}                                            \* no messages send yet
     /\ choices = [p \in PARTICIPANTS |-> 0]                 \* <<<<<<<<<<<<<<<<
 
-(* send a message to ALL participants *) 
+(* send a message to ALL participants *)
 Announce ==
     /\ msgs = {}
     /\ msgs' = msgs \union {[type |-> "DecideOnPizza"]}
@@ -62,8 +62,8 @@ TellCoordinator(participant) ==
 
 OrderCorrect(participant) ==                                \* <<<<<<<<<<<<<<<<
   \/ choices[participant] = max_number_of_choices
-  \/ /\ choices[participant] < max_number_of_choices 
-     /\ chosen[participant] = ordered[participant] 
+  \/ /\ choices[participant] < max_number_of_choices
+     /\ chosen[participant] = ordered[participant]
      /\ chosen[participant] # NO_PIZZA
 
 EventuallyCorrect ==                                        \* <<<<<<<<<<<<<<<<
@@ -77,7 +77,7 @@ Next ==
         \/ TellCoordinator(p)
 
 Spec ==
-    /\ Init 
+    /\ Init
     /\ [][Next]_vars
     /\ \A p \in PARTICIPANTS:
         /\ WF_vars(DecideOnPizza(p))
@@ -85,7 +85,7 @@ Spec ==
     /\ WF_vars(Announce)                                    \* <<<<<<<<<<<<<<<< stuttering on initial state
 
 ChoiceBounded ==                                            \* <<<<<<<<<<<<<<<<
-    \A p \in DOMAIN choices: 
+    \A p \in DOMAIN choices:
         /\ choices[p] >= 0
         /\ choices[p] <= max_number_of_choices
 
