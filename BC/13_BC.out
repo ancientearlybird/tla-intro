@@ -1,0 +1,314 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.20 of Day Month 20?? (rev: 96d6a1a)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 93 and seed -4731588187188285394 with 1 worker on 8 cores with 7264MB heap and 64MB offheap memory [pid: 17668] (Windows 10 10.0 amd64, Microsoft 21.0.6 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file C:\Users\gludwig\Projects\tla-intro\BC\13_BC.tla (file:/c:/Users/gludwig/Projects/tla-intro/BC/13_BC.tla)
+Parsing file C:\Users\gludwig\AppData\Local\Temp\tlc-11918339633677883702\Naturals.tla (jar:file:/C:/Users/gludwig/.vscode/extensions/tlaplus.vscode-ide-2025.6.170401/tools/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\Users\gludwig\AppData\Local\Temp\tlc-11918339633677883702\Sequences.tla (jar:file:/C:/Users/gludwig/.vscode/extensions/tlaplus.vscode-ide-2025.6.170401/tools/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file C:\Users\gludwig\AppData\Local\Temp\tlc-11918339633677883702\FiniteSets.tla (jar:file:/C:/Users/gludwig/.vscode/extensions/tlaplus.vscode-ide-2025.6.170401/tools/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module 13_BC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2025-06-19 06:06:07)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 1 branches.
+@!@!@ENDMSG 2212 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2025-06-19 06:06:07.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(16) at 2025-06-19 06:06:08: 12.313 states generated, 1.600 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking temporal properties for the complete state space with 1600 total distinct states at (2025-06-19 06:06:08)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2116:1 @!@!@
+Temporal properties were violated.
+
+@!@!@ENDMSG 2116 @!@!@
+@!@!@STARTMSG 2264:1 @!@!@
+The following behavior constitutes a counter-example:
+
+@!@!@ENDMSG 2264 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ buffer = <<>>
+/\ waitSet = {}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p4>>
+/\ waitSet = {}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p4, p4>>
+/\ waitSet = {}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p4, p4, p3>>
+/\ waitSet = {}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p4, p4, p3>>
+/\ waitSet = {p1}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p4, p4, p3>>
+/\ waitSet = {p1, p4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p4, p4, p3>>
+/\ waitSet = {p1, p3, p4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p4, p4, p3>>
+/\ waitSet = {p1, p2, p3, p4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p4, p3>>
+/\ waitSet = {p1, p2, p4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p3>>
+/\ waitSet = {p1, p4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<>>
+/\ waitSet = {p1}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p4>>
+/\ waitSet = {p1}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+/\ buffer = <<p4, p4>>
+/\ waitSet = {p1}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2122:4 @!@!@
+5: Back to state: <Next line 62, col 9 to line 65, col 45 of module 13_BC>
+
+@!@!@ENDMSG 2122 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 00s at 2025-06-19 06:06:08
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2025-06-19 06:06:08 (see https://explain.tlapl.us/module-coverage-statistics for how to interpret the following statistics).
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<buffer line 16, col 11 to line 16, col 16 of module 13_BC>: 71
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<waitSet line 16, col 19 to line 16, col 25 of module 13_BC>: 52
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 58, col 1 to line 58, col 4 of module 13_BC>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 58, col 9 to line 59, col 23 of module 13_BC: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Next line 62, col 1 to line 62, col 4 of module 13_BC>: 1599:12412
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 40 to line 62, col 54 of module 13_BC: 11803
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 62, col 40 to line 62, col 40 of module 13_BC: 8141
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 62, col 46 to line 62, col 54 of module 13_BC: 8141
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 42, col 10 to line 42, col 34 of module 13_BC: 1604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 42, col 10 to line 42, col 20 of module 13_BC: 3662
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 42, col 24 to line 42, col 34 of module 13_BC: 3662
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 43, col 10 to line 43, col 36 of module 13_BC: 1604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 30, col 12 to line 30, col 18 of module 13_BC: 1604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 32, col 21 to line 32, col 44 of module 13_BC: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 31, col 25 to line 31, col 25 of module 13_BC: 940
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 34, col 13 to line 34, col 29 of module 13_BC: 664
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 44, col 23 to line 44, col 23 of module 13_BC: 1604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 45, col 10 to line 45, col 34 of module 13_BC: 5720
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 45, col 10 to line 45, col 20 of module 13_BC: 3662
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 45, col 24 to line 45, col 34 of module 13_BC: 3662
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 36, col 15 to line 36, col 41 of module 13_BC: 2058
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 36, col 26 to line 36, col 41 of module 13_BC: 2058
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 36, col 26 to line 36, col 32 of module 13_BC: 2058
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 36, col 39 to line 36, col 41 of module 13_BC: 2058:5138
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 36, col 40 to line 36, col 40 of module 13_BC: 2058
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 37, col 15 to line 37, col 34 of module 13_BC: 2058
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 46, col 15 to line 46, col 15 of module 13_BC: 2058
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 63, col 44 to line 63, col 44 of module 13_BC: 3662
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 63, col 47 to line 63, col 47 of module 13_BC: 1604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 40 to line 64, col 54 of module 13_BC: 12620
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 64, col 40 to line 64, col 40 of module 13_BC: 8141
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 64, col 46 to line 64, col 54 of module 13_BC: 8141
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 49, col 10 to line 49, col 22 of module 13_BC: 8892
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 49, col 10 to line 49, col 15 of module 13_BC: 4479
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 49, col 19 to line 49, col 22 of module 13_BC: 4479
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 50, col 10 to line 50, col 31 of module 13_BC: 4413
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 30, col 12 to line 30, col 18 of module 13_BC: 4413
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 32, col 21 to line 32, col 44 of module 13_BC: 8055
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 31, col 25 to line 31, col 25 of module 13_BC: 4020
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 34, col 13 to line 34, col 29 of module 13_BC: 393
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 51, col 23 to line 51, col 23 of module 13_BC: 4413
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 52, col 10 to line 52, col 22 of module 13_BC: 4545
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 52, col 10 to line 52, col 15 of module 13_BC: 4479
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 52, col 19 to line 52, col 22 of module 13_BC: 4479
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 36, col 15 to line 36, col 41 of module 13_BC: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 36, col 26 to line 36, col 41 of module 13_BC: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 36, col 26 to line 36, col 32 of module 13_BC: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 36, col 39 to line 36, col 41 of module 13_BC: 66:360
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 36, col 40 to line 36, col 40 of module 13_BC: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 37, col 15 to line 37, col 34 of module 13_BC: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 53, col 15 to line 53, col 15 of module 13_BC: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 65, col 44 to line 65, col 44 of module 13_BC: 4479
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 18 to line 62, col 31 of module 13_BC: 1613
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<NoDeadlock line 80, col 1 to line 80, col 10 of module 13_BC>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 5 to line 81, col 41 of module 13_BC: 1600
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(16) at 2025-06-19 06:06:08: 12.313 states generated (573.586 s/min), 1.600 distinct states found (74.534 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+12313 states generated, 1600 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 16.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1292ms at (2025-06-19 06:06:08)
+@!@!@ENDMSG 2186 @!@!@

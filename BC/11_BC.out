@@ -1,0 +1,380 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.20 of Day Month 20?? (rev: 96d6a1a)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 79 and seed 6034577897079596480 with 1 worker on 8 cores with 7264MB heap and 64MB offheap memory [pid: 9388] (Windows 10 10.0 amd64, Microsoft 21.0.6 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file C:\Users\gludwig\Projects\tla-intro\11_BC.tla (file:/c:/Users/gludwig/Projects/tla-intro/11_BC.tla)
+Parsing file C:\Users\gludwig\AppData\Local\Temp\tlc-10451855673682836852\Naturals.tla (jar:file:/C:/Users/gludwig/.vscode/extensions/tlaplus.vscode-ide-2025.6.170401/tools/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file C:\Users\gludwig\AppData\Local\Temp\tlc-10451855673682836852\Sequences.tla (jar:file:/C:/Users/gludwig/.vscode/extensions/tlaplus.vscode-ide-2025.6.170401/tools/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file C:\Users\gludwig\AppData\Local\Temp\tlc-10451855673682836852\FiniteSets.tla (jar:file:/C:/Users/gludwig/.vscode/extensions/tlaplus.vscode-ide-2025.6.170401/tools/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module 11_BC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2025-06-18 07:34:37)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2025-06-18 07:34:37.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant NoDeadlock is violated.
+@!@!@ENDMSG 2110 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ buffer = <<>>
+/\ waitSet = {}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<>>
+/\ waitSet = {c1}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<>>
+/\ waitSet = {c1, c2}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<>>
+/\ waitSet = {c1, c2, c3}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<>>
+/\ waitSet = {c1, c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1>>
+/\ waitSet = {c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1>>
+/\ waitSet = {c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {p1, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {p1, p2, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {p1, p2, p3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {p1, p2, p3, p4, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {p1, p2, p3, p4, p5, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1>>
+/\ waitSet = {p2, p3, p4, p5, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1>>
+/\ waitSet = {p3, p4, p5, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<>>
+/\ waitSet = {p3, p4, p5}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+17: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<>>
+/\ waitSet = {p3, p4, p5, c1}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+18: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<>>
+/\ waitSet = {p3, p4, p5, c1, c2}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+19: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<>>
+/\ waitSet = {p3, p4, p5, c1, c2, c3}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+20: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<>>
+/\ waitSet = {p3, p4, p5, c1, c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+21: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1>>
+/\ waitSet = {p4, p5, c1, c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+22: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1>>
+/\ waitSet = {p5, c1, c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+23: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {c1, c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+24: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {p1, c1, c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+25: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {p1, p2, c1, c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+26: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {p1, p2, p3, c1, c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+27: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {p1, p2, p3, p4, c1, c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+28: <Next line 51, col 9 to line 54, col 45 of module 11_BC>
+/\ buffer = <<p1, p1, p1>>
+/\ waitSet = {p1, p2, p3, p4, p5, c1, c2, c3, c4}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2025-06-18 07:34:39 (see https://explain.tlapl.us/module-coverage-statistics for how to interpret the following statistics).
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<buffer line 16, col 11 to line 16, col 16 of module 11_BC>: 145
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2779:0 @!@!@
+<waitSet line 16, col 19 to line 16, col 25 of module 11_BC>: 512
+@!@!@ENDMSG 2779 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 47, col 1 to line 47, col 4 of module 11_BC>: 3:3
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 47, col 9 to line 48, col 23 of module 11_BC: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Next line 51, col 1 to line 51, col 4 of module 11_BC>: 78661:940923
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 51, col 40 to line 51, col 54 of module 11_BC: 554071
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 51, col 40 to line 51, col 40 of module 11_BC: 356761
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 51, col 46 to line 51, col 54 of module 11_BC: 356761
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 31, col 10 to line 31, col 34 of module 11_BC: 37875
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 31, col 10 to line 31, col 20 of module 11_BC: 197311
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 31, col 24 to line 31, col 34 of module 11_BC: 197311
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 32, col 10 to line 32, col 36 of module 11_BC: 37875
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 21, col 14 to line 21, col 25 of module 11_BC: 37875
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 22, col 34 to line 22, col 57 of module 11_BC: 146752
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 22, col 25 to line 22, col 31 of module 11_BC: 37710
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 23, col 16 to line 23, col 32 of module 11_BC: 165
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 34, col 10 to line 34, col 34 of module 11_BC: 356746
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 34, col 10 to line 34, col 20 of module 11_BC: 197311
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 34, col 24 to line 34, col 34 of module 11_BC: 197311
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 25, col 15 to line 25, col 41 of module 11_BC: 159435
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 25, col 26 to line 25, col 41 of module 11_BC: 159436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 25, col 26 to line 25, col 32 of module 11_BC: 159436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 25, col 39 to line 25, col 41 of module 11_BC: 159436:322622
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 25, col 40 to line 25, col 40 of module 11_BC: 159436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 26, col 15 to line 26, col 34 of module 11_BC: 159435
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 35, col 15 to line 35, col 15 of module 11_BC: 159436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 52, col 44 to line 52, col 44 of module 11_BC: 159436
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 52, col 47 to line 52, col 47 of module 11_BC: 37875
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 53, col 40 to line 53, col 54 of module 11_BC: 516210
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 53, col 40 to line 53, col 40 of module 11_BC: 356760
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 53, col 46 to line 53, col 54 of module 11_BC: 356760
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 38, col 10 to line 38, col 22 of module 11_BC: 317944
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 38, col 10 to line 38, col 15 of module 11_BC: 159450
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 38, col 19 to line 38, col 22 of module 11_BC: 159450
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 39, col 10 to line 39, col 31 of module 11_BC: 158494
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 21, col 14 to line 21, col 25 of module 11_BC: 158494
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 22, col 34 to line 22, col 57 of module 11_BC: 632994
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 22, col 25 to line 22, col 31 of module 11_BC: 157874
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 23, col 16 to line 23, col 32 of module 11_BC: 620
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 41, col 10 to line 41, col 22 of module 11_BC: 160406
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 41, col 10 to line 41, col 15 of module 11_BC: 159450
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 41, col 19 to line 41, col 22 of module 11_BC: 159450
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 25, col 15 to line 25, col 41 of module 11_BC: 956
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 25, col 26 to line 25, col 41 of module 11_BC: 956
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 25, col 26 to line 25, col 32 of module 11_BC: 956
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 25, col 39 to line 25, col 41 of module 11_BC: 956:1948
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 25, col 40 to line 25, col 40 of module 11_BC: 956
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 26, col 15 to line 26, col 34 of module 11_BC: 956
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 42, col 15 to line 42, col 15 of module 11_BC: 956
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 54, col 44 to line 54, col 44 of module 11_BC: 956
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 51, col 18 to line 51, col 31 of module 11_BC: 78057
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<NoDeadlock line 59, col 1 to line 59, col 10 of module 11_BC>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 60, col 5 to line 60, col 41 of module 11_BC: 78662
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(28) at 2025-06-18 07:34:39: 940.268 states generated (22.998.809 s/min), 78.662 distinct states found (1.924.060 ds/min), 658 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+940268 states generated, 78662 distinct states found, 658 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 28.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 2457ms at (2025-06-18 07:34:39)
+@!@!@ENDMSG 2186 @!@!@
